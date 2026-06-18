@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
@@ -64,9 +70,9 @@ body {
 
 /* SECTIONS */
 section {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
 h2 {
@@ -236,4 +242,33 @@ body::before {
 }
 .modal-content {
     scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-left: 4px solid #4da3ff;
+    padding-left: 12px;
+}
+body {
+    background: radial-gradient(circle at top, #0b1220, #000000);
+    position: relative;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(77,163,255,0.10), transparent 40%);
+    animation: moveGlow 10s infinite alternate;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes moveGlow {
+    from { transform: translate(0,0); }
+    to { transform: translate(80px, 60px); }
 }
