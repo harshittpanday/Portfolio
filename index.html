@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Pandey | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Harshit</div>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/harshittpanday" target="_blank">GitHub</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <h1 class="fade-in">Harshit Pandey</h1>
+
+    <p class="fade-in delay-1">
+        <span id="typing"></span>
+    </p>
+
+    <div class="buttons fade-in delay-2">
+        <a href="#projects">View Projects</a>
+        <a href="https://github.com/harshittpanday" target="_blank" rel="noopener noreferrer">
+            GitHub
+        </a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="reveal">
+    <h2>About Me</h2>
+
+    <div class="card">
+        <p>
+            I’m a PCM student and self-taught developer who builds real-time apps,
+            AI tools, and game projects. I focus on practical development and shipping working products.
+        </p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+    <h2>Projects</h2>
+
+    <div class="card project" onclick="openProject('chatapp')">
+        <h3>ChatApp V1</h3>
+        <p>Real-time chat app with authentication and Firebase backend.</p>
+    </div>
+
+    <div class="card project" onclick="openProject('blockcraft')">
+        <h3>BlockCraft</h3>
+        <p>Minecraft-style sandbox game prototype.</p>
+    </div>
+
+    <div class="card project" onclick="openProject('studyai')">
+        <h3>Study AI</h3>
+        <p>AI-powered study assistant for students.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+    <h2>Contact</h2>
+
+    <div class="card contact-card">
+        <p><strong>Email:</strong>
+            <a href="mailto:harshittpanday@gmail.com">harshittpanday@gmail.com</a>
+        </p>
+
+        <p><strong>GitHub:</strong>
+            <a href="https://github.com/harshittpanday" target="_blank">github.com/harshittpanday</a>
+        </p>
+
+        <p><strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/harshit-pandey-02842b410/" target="_blank">linkedin</a>
+        </p>
+
+        <p><strong>Instagram:</strong>
+            <a href="https://www.instagram.com/harshittpanday/" target="_blank">@harshittpanday</a>
+        </p>
+    </div>
+</section>
+
+<!-- ⭐ MODAL (IMPORTANT - MUST BE HERE) -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeProject()">&times;</span>
+
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+
+        <div id="modal-images"></div>
+
+        <div class="modal-links">
+            <a id="modal-github" target="_blank">GitHub</a>
+            <a id="modal-live" target="_blank">Live Demo</a>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
